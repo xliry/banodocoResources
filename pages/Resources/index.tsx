@@ -27,7 +27,7 @@ const ResourcesPage: React.FC = () => {
   return (
     <div className="bg-[#0b0b0f] text-zinc-100 min-h-screen">
       {/* Redesigned Hero Section - Editorial Look */}
-      <section className="relative h-screen flex items-center justify-center px-6 overflow-hidden border-b border-white/5">
+      <section className="relative h-screen flex items-center justify-center px-6 overflow-hidden border-b border-white/5 snap-start">
         {/* Abstract Background Texture */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-indigo-600/10 rounded-full blur-[120px]" />
@@ -140,7 +140,7 @@ const ResourcesPage: React.FC = () => {
           viewport={{ once: true }}
           variants={containerVariants}
           id="news"
-          className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-32"
+          className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-32 snap-start"
         >
           <div className="lg:col-span-4">
             <div className="sticky top-24">
@@ -168,7 +168,7 @@ const ResourcesPage: React.FC = () => {
           viewport={{ once: true, margin: "-100px" }}
           variants={containerVariants}
           id="assets"
-          className="space-y-12"
+          className="space-y-12 snap-start"
         >
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-zinc-800 pb-12">
             <div className="space-y-4">
@@ -205,7 +205,7 @@ const ResourcesPage: React.FC = () => {
           viewport={{ once: true }}
           variants={containerVariants}
           id="art-picks"
-          className="space-y-12"
+          className="space-y-12 snap-start"
         >
           <div className="flex items-center gap-3">
             <div className="p-2 bg-zinc-900 rounded-lg">
