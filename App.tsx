@@ -9,7 +9,7 @@ import ResourcesPreview from './resources-preview';
 
 const Theme1Layout: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="h-screen overflow-y-auto snap-y snap-proximity scroll-pt-16">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#0b0b0f]/80 backdrop-blur-md border-b border-white/5">
         <div className="max-w-[1400px] mx-auto px-6 h-16 flex items-center justify-between">
